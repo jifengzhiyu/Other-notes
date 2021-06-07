@@ -102,9 +102,13 @@ chmod 777 email.sh
 git push origin --force --all
 # 或者修改一下文件 然后重新 git add . commit push ...
 
-# 如果 第二次想要继续执行 email.sh 的文件报错的时候 说 本地已经有一个 backup 需要-f 去强制重写的话
-# 貌似可以
--f ./email.sh # 或者? ./email.sh -f  
+# 如果 第二次想要继续执行 email.sh 的文件报错的时候 说 本地已经有一个 backup 需要-f 啥的删除 才能去强制重写
+# 此时我们需要 通过下面的命令 删除本地的一个备份
+git filter-branch -f \
+--index-filter 'git rm --cached --ignore-unmatch Rakefile' HEAD
+# 执行完之后重新执行 重写 log 里面提交邮箱的脚本文件 ./email.sh
+
+# 如果上面的方法都失败了
 # 实在不行的话 就把整个本地的 repo 删掉, 重新下载, 然后进去 .git 重新配置该 repo 下的 username email
 # 重新执行上面的步骤
 ```
