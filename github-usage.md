@@ -6,6 +6,8 @@
 
 # 加入文件
 
+**Mac:cd 文件路径**
+
 1、git:输入git status:查看状态
 
 2、**git add .** :添加
