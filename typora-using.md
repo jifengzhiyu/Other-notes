@@ -1,6 +1,8 @@
+# typora using
+
+- 查找command +f
+
 # Markdown
-
-
 
 性质：就像列大纲一样
 

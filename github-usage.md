@@ -16,7 +16,7 @@
 
 4、git commit -m "自己添加备注"
 
-5、git push:上传云端
+5、git push:上传云端    git push -u origin main
 
 更改文件内容也同理
 
@@ -115,3 +115,4 @@ git filter-branch -f \
 # 重新执行上面的步骤
 ```
 
+​    
