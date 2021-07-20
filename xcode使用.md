@@ -66,4 +66,39 @@ project下面的文件夹是target，一个程序
 
 切换：编译执行哪个- target![image-20210719210943279](xcode%E4%BD%BF%E7%94%A8.assets/image-20210719210943279.png)
 
-# 
+# 重命名（要改三个地方）
+
+改名字容易出现不明原因
+
+**最好复制粘贴到新的target里面**
+
+![image-20210720165952517](xcode%E4%BD%BF%E7%94%A8.assets/image-20210720165952517.png)
+
+回车改名字（改两个，一样的名字） 
+
+![image-20210720170129402](xcode%E4%BD%BF%E7%94%A8.assets/image-20210720170129402.png)
+
+![image-20210720170154707](xcode%E4%BD%BF%E7%94%A8.assets/image-20210720170154707.png)
+
+![image-20210720170231487](xcode%E4%BD%BF%E7%94%A8.assets/image-20210720170231487.png)
+
+改名字
+
+# 删除target
+
+![image-20210720170402938](xcode%E4%BD%BF%E7%94%A8.assets/image-20210720170402938.png)
+
+![image-20210720170511671](xcode%E4%BD%BF%E7%94%A8.assets/image-20210720170511671.png)
+
+![image-20210720170611656](xcode%E4%BD%BF%E7%94%A8.assets/image-20210720170611656.png)
+
+删掉
+
+![image-20210720170129402](xcode%E4%BD%BF%E7%94%A8.assets/image-20210720170129402.png)
+
+![image-20210720170154707](xcode%E4%BD%BF%E7%94%A8.assets/image-20210720170154707.png)
+
+![image-20210720170725670](xcode%E4%BD%BF%E7%94%A8.assets/image-20210720170725670.png)
+
+删掉
+
