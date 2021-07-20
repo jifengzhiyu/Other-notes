@@ -44,6 +44,8 @@
 
 生成的可执行文件在源代码导航区的products（finder）
 
+## 快捷键
+
 ![image-20210719202601689](xcode%E4%BD%BF%E7%94%A8.assets/image-20210719202601689.png)
 
 ## 外部打开
