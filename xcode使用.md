@@ -48,6 +48,8 @@
 
 ![image-20210719202601689](xcode%E4%BD%BF%E7%94%A8.assets/image-20210719202601689.png)
 
+- command 左右括号：将选住的语句左右移动
+
 ## 外部打开
 
 想在Xcode打开一个project：
