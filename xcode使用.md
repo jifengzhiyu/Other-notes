@@ -52,10 +52,43 @@
 
 ![image-20210719202601689](xcode%E4%BD%BF%E7%94%A8.assets/image-20210719202601689.png)
 
+- 中断command r或b：command .
 - command 左右括号：将选住的语句左右移动
 - 代码排版：control i
 - 一键注释并取消：command  / 
 - 查找替代：command F，切换find or repleace
+- 函数注释：option command /
+- 移动光标上下左右: control  P/N/B/F
+
+光标移动到行首：command A
+
+- 删除字符至行尾：control k
+
+删除单行文字 control AKK
+
+- 切换功能面板：
+
+导航栏：command 0
+
+监视器：cmd option 0
+
+除错区： command shift y
+
+- 导航栏：
+
+![image-20210724110622946](xcode%E4%BD%BF%E7%94%A8.assets/image-20210724110622946.png)
+
+- 监视器：
+
+  ![image-20210724110734834](xcode%E4%BD%BF%E7%94%A8.assets/image-20210724110734834.png)
+
+-  搜索文件：commad shift o
+
+- 整行（或选中的）向上向下移动 command option [ 或 ] 
+
+- 写代码手动调出提示选单 esc
+
+- 清除背景占用的系统资源：command shift k
 
 ## 外部打开
 
