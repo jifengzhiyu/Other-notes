@@ -1,4 +1,4 @@
-
+**必须更新**
 
 ![image-20210719195034007](xcode%E4%BD%BF%E7%94%A8.assets/image-20210719195034007.png)
 
@@ -46,7 +46,9 @@
 
 ![image-20210719194919799](xcode%E4%BD%BF%E7%94%A8.assets/image-20210719194919799.png)
 
-3、保存地址那里，下面的 别勾3、生成的可执行文件在源代码导航区的products（finder）
+3、保存地址那里，下面的 别勾
+
+4、生成的可执行文件在源代码导航区的products（finder）
 
 ## 快捷键
 
@@ -73,6 +75,8 @@
 监视器：cmd option 0
 
 除错区： command shift y
+
+- 选择自选方框下的文字：按下option键，待光标变成十字线后去选择，然后conmand＋C，command＋V 
 
 - 导航栏：
 
@@ -105,6 +109,12 @@
 2、添加target，上图
 
 3、切换：编译执行哪个- target![image-20210719210943279](xcode%E4%BD%BF%E7%94%A8.assets/image-20210719210943279.png)
+
+# 复制文件
+
+把finder里面的文件直接拖拽到新的项目文件夹里（Xcode）
+
+![image-20210730114450168](xcode%E4%BD%BF%E7%94%A8.assets/image-20210730114450168.png)
 
 # 重命名（要改三个地方）
 
@@ -145,3 +155,12 @@
 # 查看“字典”
 
 选中函数，打开jump to definition
+
+# 访问类
+
+一个target中的类无法直接在另外一个target里面访问
+
+如果想要这么做的话，在finder里面把想要的文件拖到源代码导航区
+
+![image-20210804111833998](xcode%E4%BD%BF%E7%94%A8.assets/image-20210804111833998.png)
+

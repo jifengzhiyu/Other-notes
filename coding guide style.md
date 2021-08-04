@@ -33,6 +33,8 @@ Rewind(stdin);
 
 - 在函数内部隐藏代码：把代码用大括号括起来再隐藏
 
+- 枚举，结构体放在头文件里面
+
 # 调试(步骤，看值)
 
 - BUG：程序可以运行，但结果与想象不一样
@@ -46,6 +48,25 @@ Rewind(stdin);
   调试之后需要把调试用的语句注释掉
 
 - 变量表格法：纸上进行演算
+
+-  用宏来打印变量，进行调试。调试之后改变宏值，不需要删除调试代码
+
+```c
+#define DEBUG 1//调试结束修改DEBUG的宏值就行
+#if DEBUG == 1
+    #define LOG(val1,val2) printf(val1,val2)
+#else
+    #define LOG(val1,val2)
+#endif
+
+int main(){
+    int num = 10;
+    LOG("num = %d\n",num);
+    return 0;
+}
+```
+
+
 
 # 测试
 
@@ -130,8 +151,44 @@ while(1){
 
 字符串：str
 
+指针：p
+
 - 不同层级（作用域）别定义相同名字的变量
 
 - 数组命名：复数
 
 数组循环变量：i j 
+
+- 结构体类型命名：首字母大写
+
+- 枚举类型名称的命名：每一个单词的首字母大小 Direction
+
+枚举值的命名：枚举类型的名称 加 自己的名称 DirectionW(以枚举类型的名称开头)
+
+- 类名每一个单词的首字母必须大写
+
+为类定义属性的时候，属性的名字必须以_开头
+
+- 带参数的方法声明规范
+
+1） 如果方法有一个参数，命名xxxWith:  或  xxxWithXxx
+
+2）如果方法有多个参数，命名
+
+方法名With:(参数类型)参数名称 and:(参数类型)参数名称 and:(参数类型)参数名称；
+
+```objective-c
+- (int)sumWith:(int)num1 and:(int)num2;
+```
+
+名字成为sumWith: and:
+
+更加详细的是:
+
+方法名With参数1:(参数类型)参数名称 and参数2:(参数类型)参数名称 and参数3:(参数类型)参数名称；
+
+**一切的目的都是增加可读性，看起来像一句话**
+
+```objective-c
+- (int)sumWithNum1:(int)num1 andNum2:(int)num2;
+```
