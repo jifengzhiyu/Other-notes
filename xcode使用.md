@@ -164,3 +164,23 @@
 
 ![image-20210804111833998](xcode%E4%BD%BF%E7%94%A8.assets/image-20210804111833998.png)
 
+# 找Xcode文档
+
+选中关键词
+
+![image-20210805213451248](xcode%E4%BD%BF%E7%94%A8.assets/image-20210805213451248.png)
+
+或者
+
+![image-20210805213807769](xcode%E4%BD%BF%E7%94%A8.assets/image-20210805213807769.png)
+
+选中关键词，在属性检察区问号里面找，可以open in developer documentaion
+
+或者
+
+option点关键字
+
+# 在创建的时候指定父类
+
+![image-20210806113635266](xcode%E4%BD%BF%E7%94%A8.assets/image-20210806113635266.png)
+
