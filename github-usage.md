@@ -115,4 +115,16 @@ git filter-branch -f \
 # 重新执行上面的步骤
 ```
 
-​    
+# git翻墙
+
+```
+git config --global http.proxy http://localhost:8123
+git config --global https.proxy http://localhost:8123
+```
+
+可以用`git config --list`查看是否设置成功。
+
+![image-20210815100446428](github-usage.assets/image-20210815100446428.png)
+
+把8123替换成红色区域（shadowsocks)的数字
+

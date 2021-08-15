@@ -78,6 +78,8 @@
 
 - 选择自选方框下的文字：按下option键，待光标变成十字线后去选择，然后conmand＋C，command＋V 
 
+- 范围编辑（Edit All in Scope，默认快捷键Ctrl+Command+E）。
+
 - 导航栏：
 
 ![image-20210724110622946](xcode%E4%BD%BF%E7%94%A8.assets/image-20210724110622946.png)
