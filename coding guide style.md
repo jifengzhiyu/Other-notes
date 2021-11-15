@@ -40,6 +40,9 @@ Rewind(stdin);
 ![image-20210805191248594](coding%20guide%20style.assets/image-20210805191248594.png)
 
 - 当属性的类型是BOOL类型时，修改getter名字以is开头
+- 单例的类方法以default / shared 开头
+
+## 
 
 # 调试(步骤，看值)
 

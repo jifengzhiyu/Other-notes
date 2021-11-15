@@ -28,6 +28,12 @@
 
 当单步执行到子函数内时，用step out就可以执行完子函数余下部分
 
+## Exception Breakpoint
+
+定位出现错误的地方
+
+![image-20210925232836299](xcode%E4%BD%BF%E7%94%A8.assets/image-20210925232836299.png)
+
 # 搞一个界面
 
 ## 启动问题
@@ -55,11 +61,17 @@
 ![image-20210719202601689](xcode%E4%BD%BF%E7%94%A8.assets/image-20210719202601689.png)
 
 - 中断command r或b：command .
+
+- ![image-20210904112749300](xcode%E4%BD%BF%E7%94%A8.assets/image-20210904112749300.png)
+
+- 复制view：command D
+- **清除缓存：shift command K**
+
 - command 左右括号：将选住的语句左右移动
 - 代码排版：control i
 - 一键注释并取消：command  / 
 - 查找替代：command F，切换find or repleace
-- 函数注释：option command /
+- 文档注释：option command /
 - 移动光标上下左右: control  P/N/B/F
 
 光标移动到行首：command A
@@ -77,8 +89,10 @@
 除错区： command shift y
 
 - 选择自选方框下的文字：按下option键，待光标变成十字线后去选择，然后conmand＋C，command＋V 
-
 - 范围编辑（Edit All in Scope，默认快捷键Ctrl+Command+E）。
+- 旋转屏幕 command 右
+
+- option command [ 或 ]  交换顺序 
 
 - 导航栏：
 
@@ -95,6 +109,12 @@
 - 写代码手动调出提示选单 esc
 
 - 清除背景占用的系统资源：command shift k
+
+- 全局折叠（折叠当前文件下的全部函数）
+
+  ```rust
+  Shift+Command+Option+Left/Right
+  ```
 
 ## 外部打开
 
@@ -186,3 +206,10 @@ option点关键字
 
 ![image-20210806113635266](xcode%E4%BD%BF%E7%94%A8.assets/image-20210806113635266.png)
 
+# 模拟器
+
+- Option 多点触摸
+
+![image-20211006111314533](xcode%E4%BD%BF%E7%94%A8.assets/image-20211006111314533.png)
+
+- 截图command s
