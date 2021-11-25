@@ -4,6 +4,8 @@
 
 # 调试
 
+https://mp.weixin.qq.com/s/fD9BP2D6DqoLQffd1OqtVA
+
 1、开始调试：点击行号
 
 取消调试：把断点行号拖出来一丢就可以了
@@ -57,6 +59,11 @@
 4、生成的可执行文件在源代码导航区的products（finder）
 
 ## 快捷键
+
+- Option 左右 到达单词的最开头/结尾
+
+- 确定当前文件位置: Command shift J
+- 快速查找: command shift o  
 
 ![image-20210719202601689](xcode%E4%BD%BF%E7%94%A8.assets/image-20210719202601689.png)
 

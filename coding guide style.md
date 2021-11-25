@@ -226,3 +226,14 @@ while(1){
 - Setter:命名：set开头，去掉下划线首字母大写的属性名
 
 Getter:方法名称就是属性名称，去掉下划线（小写）
+
+# 排列顺序
+
+![image-20211124160528255](coding%20guide%20style.assets/image-20211124160528255.png)
+
+//MARK: - 分割名
+
+///函数描述
+
+文档注释：option command /
+
