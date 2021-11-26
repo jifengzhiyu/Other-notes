@@ -1,3 +1,16 @@
+# 使用CocoaPods
+
+https://blog.csdn.net/sinat_20019511/article/details/110091901
+https://blog.csdn.net/st646889325/article/details/86466170
+
+- 使用CocoaPods
+
+```objective-c
+#import <AFHTTPSessionManager.h>
+```
+
+
+
 **必须更新**
 
 ![image-20210719195034007](xcode%E4%BD%BF%E7%94%A8.assets/image-20210719195034007.png)
