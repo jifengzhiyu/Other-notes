@@ -3,11 +3,52 @@
 https://blog.csdn.net/sinat_20019511/article/details/110091901
 https://blog.csdn.net/st646889325/article/details/86466170
 
-- 使用CocoaPods
+- 使用CocoaPods(AFN为例)
+
+1. cd .xcodeproj的上一级文件夹
+
+2. pod init
+
+3. 把创建的Podfile文件 拖到 Xcode图标里面
+
+4. ```
+   # Uncomment the next line to define a global platform for your project
+   # platform :ios, '9.0'
+   
+   target '封装_AFN框架_Swift' do
+     # Comment the next line if you don't want to use dynamic frameworks
+     use_frameworks!
+     pod 'AFNetworking'
+     # Pods for 封装_AFN框架_Swift
+   
+   end
+   ```
+
+5. 安装框架 pod install
+
+6. ```bash
+   # 今后升级、添加、删除框架，或者框架不好用
+   $ pod update
+   ```
 
 ```objective-c
+//OC
 #import <AFHTTPSessionManager.h>
+//swift
+import AFNetworking
+
+//使用在xcode文件里
 ```
+
+framework not found Pods____AFN___swift
+
+如果遇到这样的报错，就
+
+解决方法：
+
+1.项目蓝色图标－>Targets->General->Linked Frameworks and Libraries
+
+2.删除 Pods_XXX___.frameworks
 
 
 
@@ -73,10 +114,12 @@ https://mp.weixin.qq.com/s/fD9BP2D6DqoLQffd1OqtVA
 
 ## 快捷键
 
+- control 6 展开当前所有函数名目录
+- 全局修改单词：command control E
 - Option 左右 到达单词的最开头/结尾
-
 - 确定当前文件位置: Command shift J
 - 快速查找: command shift o  
+- 全局查找 command shift f
 
 ![image-20210719202601689](xcode%E4%BD%BF%E7%94%A8.assets/image-20210719202601689.png)
 
@@ -129,6 +172,8 @@ https://mp.weixin.qq.com/s/fD9BP2D6DqoLQffd1OqtVA
 - 写代码手动调出提示选单 esc
 
 - 清除背景占用的系统资源：command shift k
+
+- 部分折叠 option command left/right 
 
 - 全局折叠（折叠当前文件下的全部函数）
 
