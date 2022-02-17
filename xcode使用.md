@@ -154,9 +154,8 @@ https://mp.weixin.qq.com/s/fD9BP2D6DqoLQffd1OqtVA
 - 选择自选方框下的文字：按下option键，待光标变成十字线后去选择，然后conmand＋C，command＋V 
 - 范围编辑（Edit All in Scope，默认快捷键Ctrl+Command+E）。
 - 旋转屏幕 command 右
-
-- option command [ 或 ]  交换顺序 
-
+- option command [ 或 ]  交换上下顺序 
+-  command [ 或 ]  语句前后调整 
 - 导航栏：
 
 ![image-20210724110622946](xcode%E4%BD%BF%E7%94%A8.assets/image-20210724110622946.png)
