@@ -114,6 +114,8 @@ https://mp.weixin.qq.com/s/fD9BP2D6DqoLQffd1OqtVA
 
 ## 快捷键
 
+- 全选control A
+
 - control 6 展开当前所有函数名目录
 - 全局修改单词：command control E
 - Option 左右 到达单词的最开头/结尾
@@ -277,3 +279,49 @@ option点关键字
 ![image-20211006111314533](xcode%E4%BD%BF%E7%94%A8.assets/image-20211006111314533.png)
 
 - 截图command s
+
+# 预编译指令
+
+```c
+#include <stdio.h> // 告诉系统printf函数是存在的, 告诉系统printf函数的格式(声明printf函数)
+
+// include的作用, 是将include右边的文件拷贝到当前文件中
+
+int main(int argc, const char * argv[]) {
+    //     include指令不一定要写在文件的头部
+//#include "abc/lnj.txt"
+#include "/Users/xiaomage/Desktop/课堂共享/day05/code/day05/include基本概念/abc/lnj.txt"
+    
+    return 0;
+}
+/*
+ include后面的 <> 和 "" 的区别
+ >如果使用<>代表会先从开发工具的编译环境中去查找
+    + /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.10.sdk/usr/include/
+ 
+ >如果编译环境中没有找到, 那么会再去系统的编译环境中找
+    + /usr/include/stdio.h
+ 
+ >如果使用""代表会先从当前文件所在的文件夹下面查找
+ >如果在当前文件所在的文件夹下面没有找到, 那么就回去开发工具的编译环境(如stdio.h）中去查找
+ >如果编译环境中没有找到, 那么会再去系统的编译环境中找
+ 
+ 注意: include后面不一定要写文件名称 也可以写路径(相对路径/ 全路径)
+ 
+ 预处理指令在.c--->.o过程中替换
+ 
+ 纯拷贝
+ */
+
+// 注意: .h是专门用来被拷贝的, 不会参与编译
+//直接拷贝到main.c，main.c参与编译
+
+运行步骤分析：
+在编译之前，预编译器会将sum.h文件中的内容拷贝到main.c中
+接着编译main.c和sum.c两个源文件，生成目标文件main.o和sum.o，这2个文件是不能被单独执行的，原因很简单：
+sum.o中不存在main函数，肯定不可以被执行
+main.o中虽然有main函数，但是它在main函数中调用了一个sum函数，而sum函数的定义却存在于sum.o中，因此main.o依赖于sum.o
+把main.o、sum.o链接在一起，生成可执行文件
+运行程序
+```
+
