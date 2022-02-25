@@ -114,6 +114,8 @@ https://mp.weixin.qq.com/s/fD9BP2D6DqoLQffd1OqtVA
 
 ## 快捷键
 
+- Command control ⬆️ 切换h m 文件
+
 - 全选control A
 
 - control 6 展开当前所有函数名目录
