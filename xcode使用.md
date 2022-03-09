@@ -114,6 +114,16 @@ https://mp.weixin.qq.com/s/fD9BP2D6DqoLQffd1OqtVA
 
 ## 快捷键
 
+- 虚拟机command 左右 转方向
+
+- 虚拟机 command shft H 返回主屏幕
+- 虚拟机 command shft H 两次 看到后台
+- 虚拟机command L 锁屏
+
+- 打开assistant退出 要看sb command 回车
+
+打开assistant control option command 回车
+
 - Command control ⬆️ 切换h m 文件
 
 - 全选control A
