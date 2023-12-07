@@ -16,7 +16,7 @@
 
 4、git commit -m "自己添加备注"
 
-5、git push:上传云端    git push -u origin main
+5、git push:上传云端 git push -u origin main
 
 更改文件内容也同理
 
@@ -130,7 +130,7 @@ git config --global https.proxy http://localhost:8123
 
 # ================
 
-#  git
+# git
 
 - git：源代码管理工具
 - Github,xcode： 图形界面客户端
@@ -149,20 +149,15 @@ https://blog.csdn.net/qq_43768946/article/details/90411154
 
 # git和SVN的简单对比
 
-速度
-在很多情况下，git的速度远远比SVN快
+速度 在很多情况下，git的速度远远比SVN快
 
-结构
-SVN是集中式管理，git是分布式管理
+结构 SVN是集中式管理，git是分布式管理
 
 SVN是集中式管理(代码的版本库, 只在一台服务器存在)
 
 git是分布式管理(代码的版本库, 服务器和每一台客户端都存在)
 
-其他
-SVN使用分支比较笨拙(整体拷贝)，git可以轻松拥有无限个分支（标注）
-SVN必须联网才能正常工作，git支持本地版本控制工作
-旧版本的SVN会在每一个目录置放一个.svn，git只会在根目录拥有一个.git
+其他 SVN使用分支比较笨拙(整体拷贝)，git可以轻松拥有无限个分支（标注） SVN必须联网才能正常工作，git支持本地版本控制工作 旧版本的SVN会在每一个目录置放一个.svn，git只会在根目录拥有一个.git
 
 ![image-20211230093136989](github-usage.assets/image-20211230093136989.png)
 
@@ -178,65 +173,40 @@ SVN必须联网才能正常工作，git支持本地版本控制工作
 
 ![image-20211231094342523](github-usage.assets/image-20211231094342523.png)
 
-
-
 # git常用指令
 
-git help ：git指令帮助手册
-查看其他指令的做法：git help 其他指令                                                                                                                             搜索关键字:/ clone(翻页:F写一页,B上一页)                                                                                                                         如果想退出帮助文档:输入Q
+git help ：git指令帮助手册 查看其他指令的做法：git help 其他指令 搜索关键字:/ clone(翻页:F写一页,B上一页)
+如果想退出帮助文档:输入Q
 
-git config ：git的配置信息相关（修改的是.git/config文件）
-配置用户名：git config “user.name” 用户名（用于跟踪修改记录）
-配置邮箱：git config “user.email” 邮箱（用于多人开发间的沟通）
-查看配置信息：git config –l
-编辑配置信息：git config –e（用vim编辑，:wq是退出vim编辑器）
-设置指令的别名：git config alias.别名 原指令名称
-设置带参数指令的别名：git config alias.别名 “原指令名称 参数”
-将此设置应用到整个系统中：git config ––gloabal
+git config ：git的配置信息相关（修改的是.git/config文件） 配置用户名：git config “user.name” 用户名（用于跟踪修改记录） 配置邮箱：git config “user.email”
+邮箱（用于多人开发间的沟通） 查看配置信息：git config –l 编辑配置信息：git config –e（用vim编辑，:wq是退出vim编辑器） 设置指令的别名：git config alias.别名 原指令名称
+设置带参数指令的别名：git config alias.别名 “原指令名称 参数” 将此设置应用到整个系统中：git config ––gloabal
 
-git status ：查文件的状态
-查看某个文件的状态：git status 文件名
-查看当前路径所有文件的状态：git status
+git status ：查文件的状态 查看某个文件的状态：git status 文件名 查看当前路径所有文件的状态：git status
 
-git log ：查看文件的修改日志
-查看某个文件的修改日志：git log 文件名
-查看当前路径所有文件的修改日志：git log
-用一行的方式查看简单的日志信息：git log ––pretty=oneline
+git log ：查看文件的修改日志 查看某个文件的修改日志：git log 文件名 查看当前路径所有文件的修改日志：git log 用一行的方式查看简单的日志信息：git log ––pretty=oneline
 查看最近的N次修改：git log –N（N是一个整数）
 
-git diff ：查看文件最新改动的地方
-查看某个文件的最新改动的地方：git diff 文件名
-查看当前路径所有文件最新改动的地方：git diff
+git diff ：查看文件最新改动的地方 查看某个文件的最新改动的地方：git diff 文件名 查看当前路径所有文件最新改动的地方：git diff
 
-git init ：初始化一个空的本地仓库，生成一个.git目录，用于维护版本信息
-在当前路径初始化仓库：git init
-在其他路径初始化仓库：git init 仓库路径
+git init ：初始化一个空的本地仓库，生成一个.git目录，用于维护版本信息 在当前路径初始化仓库：git init 在其他路径初始化仓库：git init 仓库路径
 
-git add ：将工作区的文件保存到暂缓区
-保存某个文件到暂缓区：git add 文件名
-保存当前路径的所有文件到暂缓区：git add .（注意，最后是一个点 . ）
+git add ：将工作区的文件保存到暂缓区 保存某个文件到暂缓区：git add 文件名 保存当前路径的所有文件到暂缓区：git add .（注意，最后是一个点 . ）
 
-git commit ：将暂缓区的文件提交到当前分支
-提交某个文件到分支：git commit -m ”注释” 文件名
-保存当前路径的所有文件到分支：git commit -m ”注释” 
+git commit ：将暂缓区的文件提交到当前分支 提交某个文件到分支：git commit -m ”注释” 文件名 保存当前路径的所有文件到分支：git commit -m ”注释”
 
-git reset ：版本回退（建议加上––hard参数，git支持无限次后悔）
-回退到上一个版本：git reset ––hard HEAD^
-回退到上上一个版本：git reset ––hard HEAD^^
-回退到上N个版本：git reset ––hard HEAD~N（N是一个整数）
-回退到任意一个版本：git reset ––hard 版本号（版本号用7位即可）
+git reset ：版本回退（建议加上––hard参数，git支持无限次后悔） 回退到上一个版本：git reset ––hard HEAD^ 回退到上上一个版本：git reset ––hard HEAD^^ 回退到上N个版本：git
+reset ––hard HEAD~N（N是一个整数） 回退到任意一个版本：git reset ––hard 版本号（版本号用7位即可）
 
 git reflog ：查看指令使用记录（能够查看所有的版本号）
 
 git rm：删除文件（删完之后要进行commit操作，才能同步到版本库）
 
-git clone：下载远程仓库到本地
-下载远程仓库到当前路径：git clone 仓库的URL
-下载远程仓库到特定路径：git clone 仓库的URL 存放仓库的路径
+git clone：下载远程仓库到本地 下载远程仓库到当前路径：git clone 仓库的URL 下载远程仓库到特定路径：git clone 仓库的URL 存放仓库的路径
 
 git pull：下载远程仓库的最新信息到本地仓库
 
-git push：将本地的仓库信息推送到远程仓库 
+git push：将本地的仓库信息推送到远程仓库
 
 # GitHub项目文件创建注意
 
@@ -255,3 +225,51 @@ git push：将本地的仓库信息推送到远程仓库
 如何删除GIT中的.DS_Store
 
 https://www.jianshu.com/p/fdaa8be7f6c3
+
+# 删除之前未提交的commit 但是不回退未提交版本
+
+Git log 红色复制
+
+https://blog.csdn.net/qq_46106285/article/details/124744328
+
+git reset --soft <无法上传的那次的上一个的id>
+
+注：id输入6位以上就差不多可以了，多输入几位也行，不用全选
+
+注：git reset 有三种模式：–soft、–hard和不加参数。
+
+–soft是保留工作区的内容和add提交，只是切换指针
+–hard是什么都不保留
+不加参数是保留工作区的内容但是不保留add提交
+在其他情况下，你也可以选择使用其他的参数。
+
+
+# 删除历史版本，保留当前状态
+
+https://blog.csdn.net/caicai0001000/article/details/122108495
+
+1、创建并切换到lastest_branch分支
+
+git checkout --orphan latest_branch
+
+2、添加所有文件
+
+git add -A
+
+3、提交更改
+
+git commit -am "删除历史版本记录，初始化仓库"
+
+4、删除分支
+
+git branch -D master
+
+5、将当前分支重命名
+
+git branch -m master
+
+6、强制更新存储库
+
+git push -f origin master
+
+# LFS收费 坑！

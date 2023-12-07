@@ -50,8 +50,6 @@ framework not found Pods____AFN___swift
 
 2.删除 Pods_XXX___.frameworks
 
-
-
 **必须更新**
 
 ![image-20210719195034007](xcode%E4%BD%BF%E7%94%A8.assets/image-20210719195034007.png)
@@ -132,7 +130,7 @@ https://mp.weixin.qq.com/s/fD9BP2D6DqoLQffd1OqtVA
 - 全局修改单词：command control E
 - Option 左右 到达单词的最开头/结尾
 - 确定当前文件位置: Command shift J
-- 快速查找: command shift o  
+- 快速查找: command shift o
 - 全局查找 command shift f
 
 ![image-20210719202601689](xcode%E4%BD%BF%E7%94%A8.assets/image-20210719202601689.png)
@@ -146,10 +144,10 @@ https://mp.weixin.qq.com/s/fD9BP2D6DqoLQffd1OqtVA
 
 - command 左右括号：将选住的语句左右移动
 - 代码排版：control i
-- 一键注释并取消：command  / 
+- 一键注释并取消：command /
 - 查找替代：command F，切换find or repleace
 - 文档注释：option command /
-- 移动光标上下左右: control  P/N/B/F
+- 移动光标上下左右: control P/N/B/F
 
 光标移动到行首：command A
 
@@ -165,11 +163,11 @@ https://mp.weixin.qq.com/s/fD9BP2D6DqoLQffd1OqtVA
 
 除错区： command shift y
 
-- 选择自选方框下的文字：按下option键，待光标变成十字线后去选择，然后conmand＋C，command＋V 
+- 选择自选方框下的文字：按下option键，待光标变成十字线后去选择，然后conmand＋C，command＋V
 - 范围编辑（Edit All in Scope，默认快捷键Ctrl+Command+E）。
 - 旋转屏幕 command 右
-- option command [ 或 ]  交换上下顺序 
--  command [ 或 ]  语句前后调整 
+- option command [ 或 ]  交换上下顺序
+- command [ 或 ]  语句前后调整
 - 导航栏：
 
 ![image-20210724110622946](xcode%E4%BD%BF%E7%94%A8.assets/image-20210724110622946.png)
@@ -178,15 +176,15 @@ https://mp.weixin.qq.com/s/fD9BP2D6DqoLQffd1OqtVA
 
   ![image-20210724110734834](xcode%E4%BD%BF%E7%94%A8.assets/image-20210724110734834.png)
 
--  搜索文件：commad shift o
+- 搜索文件：commad shift o
 
-- 整行（或选中的）向上向下移动 command option [ 或 ] 
+- 整行（或选中的）向上向下移动 command option [ 或 ]
 
 - 写代码手动调出提示选单 esc
 
 - 清除背景占用的系统资源：command shift k
 
-- 部分折叠 option command left/right 
+- 部分折叠 option command left/right
 
 - 全局折叠（折叠当前文件下的全部函数）
 
@@ -224,7 +222,7 @@ https://mp.weixin.qq.com/s/fD9BP2D6DqoLQffd1OqtVA
 
 ![image-20210720165952517](xcode%E4%BD%BF%E7%94%A8.assets/image-20210720165952517.png)
 
-1、回车改名字（改两个，一样的名字） 
+1、回车改名字（改两个，一样的名字）
 
 ![image-20210720170129402](xcode%E4%BD%BF%E7%94%A8.assets/image-20210720170129402.png)
 
